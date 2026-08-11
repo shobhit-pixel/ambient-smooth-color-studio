@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ambient Smooth Color Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient" id="ambient">
+  <div class="orb orb-1"></div><div class="orb orb-2"></div>
+  <div class="orb orb-3"></div><div class="orb orb-4"></div>
+  <div class="orb orb-5"></div><div class="orb orb-6"></div>
+  <div class="soft-light"></div>
+  <div class="noise"></div><div class="vignette"></div>
+</div>
+
+<div class="panel">
+  <div class="group colors-group">
+    <div class="label">COLOURS</div>
+    <div class="swatches" id="swatches"></div>
+    <button class="add-color" id="addColor">+</button>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="group">
+    <div class="label">SHOW</div>
+    <div class="count-buttons" id="countButtons">
+      <button data-count="1">1</button><button data-count="2">2</button>
+      <button data-count="3">3</button><button data-count="4">4</button>
+      <button data-count="5">5</button><button data-count="6">6</button>
+      <button data-count="7">7</button><button data-count="8">8</button>
+    </div>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="group speed-group">
+    <div class="label">SPEED</div>
+    <div class="speed">
+      <input id="speed" type="range" min=".15" max="2" step=".05" value=".7">
+      <span id="speedValue">0.70</span>
+    </div>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="group fx-group">
+    <div class="label">FX</div>
+    <div class="switches">
+      <button class="switch active" data-feature="noise"><span>NOISE</span><i></i><b>On</b><b>Off</b></button>
+      <button class="switch active" data-feature="vignette"><span>VIGNETTE</span><i></i><b>On</b><b>Off</b></button>
+      <button class="switch active" data-feature="motion"><span>MOTION</span><i></i><b>On</b><b>Off</b></button>
+    </div>
+  </div>
+</div>
+
+<input id="colorPicker" type="color" value="#ffb39f" hidden>
+<script src="script.js"></script>
+</body>
+</html>
