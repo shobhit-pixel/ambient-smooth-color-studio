@@ -886,16 +886,6 @@ The architecture makes it easy to add:
 
 ---
 
-# 📜 License
-
-This project is provided as an open-source creative experiment.
-
-You may modify the HTML, CSS, and JavaScript for your own projects.
-
-If you publish a modified version, keeping attribution to the original project is appreciated.
-
----
-
 # 👨‍💻 Author
 
 **Ambient Smooth Color Studio**
